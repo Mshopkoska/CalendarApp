@@ -1,0 +1,110 @@
+﻿@using CALENDAR.Entity
+@model CalendarApp.Web.Models.EventViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Event</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            @Html.HiddenFor(m => m.UserId)
+            
+            <input type="hidden" asp-for="Event.Id" />
+            <div class="form-group">
+                <label asp-for="Event.Name" class="control-label"></label>
+                <input asp-for="Event.Name" class="form-control" />
+               
+            </div>
+            <div class="form-group">
+                <label asp-for="Event.Description" class="control-label"></label>
+                <input asp-for="Event.Description" class="form-control" />
+               
+            </div>
+            <div class="form-group">
+                <label asp-for="Event.StartTime" class="control-label"></label>
+                <input asp-for="Event.StartTime" class="form-control" />
+               
+            </div>
+            <div class="form-group">
+                <label asp-for="Event.EndTime" class="control-label"></label>
+                <input asp-for="Event.EndTime" class="form-control" />
+                
+            </div>
+            <div class="form-group">
+                <label>Location</label>
+                @Html.DropDownList("Location", Model.Location, "Select a Location", new { @class = "form-control" })
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Event.reminderFrequency">Select Reminder Frequency:</label><br />
+                <select name="Event.reminderFrequency" asp-items="Html.GetEnumSelectList<ReminderFrequency>()"></select><br />
+             
+            </div>
+            <div>
+                <label asp-for="Event.NTimesFrequency" class="control-label"></label>
+                <input asp-for="Event.NTimesFrequency" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Event.Emails" class="control-label">Emails who should get the event reminder (comma separated)</label>
+                <input asp-for="Event.Emails"/>
+                
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function SetSelectedLocation(Location) {
+        var locations = document.getElementById('Location'), loc, i;
+
+        for (i = 0; i < locations.length; i++) {
+            loc = locations[i];
+            if (loc.innerText === Location) {
+                loc.selected = "true";
+            }
+        }
+    }
+    var eventlocation = "@Html.Raw(Model.LocationName)";
+    document.addEventListener('DOMContentLoaded', function () {
+        SetSelectedLocation(eventlocation);
+    });
+
+
+    //set frequency
+    function SetSelectedFrequency(ReminderFrequency) {
+        var reminders = document.getElementById('ReminderFrequency'), freq, j;
+
+        for (j = 0; j < reminders.length; j++) {
+            freq = reminders[j];
+            if (freq.innerText === ReminderFrequency) {
+                freq.selected = "true";
+            }
+        }
+    }
+    var eventFrequency = "@Html.Raw(Model.ReminderFrequency)";
+    document.addEventListener('DOMContentLoaded', function () {
+        SetSelectedFrequency(eventFrequency);
+    });
+
+</script>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+

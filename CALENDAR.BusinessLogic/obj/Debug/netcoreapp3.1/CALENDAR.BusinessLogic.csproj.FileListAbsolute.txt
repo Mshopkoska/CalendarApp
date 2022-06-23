@@ -1,0 +1,17 @@
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\bin\Debug\netcoreapp3.1\CALENDAR.BusinessLogic.deps.json
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\bin\Debug\netcoreapp3.1\CALENDAR.BusinessLogic.dll
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\bin\Debug\netcoreapp3.1\CALENDAR.BusinessLogic.pdb
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\bin\Debug\netcoreapp3.1\CALENDAR.Data.dll
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\bin\Debug\netcoreapp3.1\CALENDAR.Entity.dll
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\bin\Debug\netcoreapp3.1\CALENDAR.Migrations.dll
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\bin\Debug\netcoreapp3.1\CALENDAR.Data.pdb
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\bin\Debug\netcoreapp3.1\CALENDAR.Entity.pdb
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\bin\Debug\netcoreapp3.1\CALENDAR.Migrations.pdb
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\obj\Debug\netcoreapp3.1\CALENDAR.BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\obj\Debug\netcoreapp3.1\CALENDAR.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\obj\Debug\netcoreapp3.1\CALENDAR.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\obj\Debug\netcoreapp3.1\CALENDAR.BusinessLogic.AssemblyInfo.cs
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\obj\Debug\netcoreapp3.1\CALENDAR.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\obj\Debug\netcoreapp3.1\CALENDAR.BusinessLogic.csproj.CopyComplete
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\obj\Debug\netcoreapp3.1\CALENDAR.BusinessLogic.dll
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.BusinessLogic\obj\Debug\netcoreapp3.1\CALENDAR.BusinessLogic.pdb
