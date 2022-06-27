@@ -912,3 +912,4 @@ C:\Users\Mimoza\source\repos\CALENDAR\CalendarApp.Web\obj\Debug\netcoreapp3.1\Ra
 C:\Users\Mimoza\source\repos\CALENDAR\CalendarApp.Web\bin\Debug\netcoreapp3.1\MailKit.dll
 C:\Users\Mimoza\source\repos\CALENDAR\CalendarApp.Web\bin\Debug\netcoreapp3.1\MimeKit.dll
 C:\Users\Mimoza\source\repos\CALENDAR\CalendarApp.Web\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\Mimoza\source\repos\CALENDAR\CalendarApp.Web\bin\Debug\netcoreapp3.1\FluentScheduler.dll

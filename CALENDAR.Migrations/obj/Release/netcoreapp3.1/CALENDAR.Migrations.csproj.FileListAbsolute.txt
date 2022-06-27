@@ -1,0 +1,16 @@
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\bin\Release\netcoreapp3.1\CALENDAR.Migrations.deps.json
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\bin\Release\netcoreapp3.1\CALENDAR.Migrations.runtimeconfig.json
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\bin\Release\netcoreapp3.1\CALENDAR.Migrations.runtimeconfig.dev.json
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\bin\Release\netcoreapp3.1\CALENDAR.Migrations.dll
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\bin\Release\netcoreapp3.1\CALENDAR.Migrations.pdb
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\bin\Release\netcoreapp3.1\CALENDAR.Entity.dll
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\bin\Release\netcoreapp3.1\CALENDAR.Entity.pdb
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\obj\Release\netcoreapp3.1\CALENDAR.Migrations.csproj.AssemblyReference.cache
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\obj\Release\netcoreapp3.1\CALENDAR.Migrations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\obj\Release\netcoreapp3.1\CALENDAR.Migrations.AssemblyInfoInputs.cache
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\obj\Release\netcoreapp3.1\CALENDAR.Migrations.AssemblyInfo.cs
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\obj\Release\netcoreapp3.1\CALENDAR.Migrations.csproj.CoreCompileInputs.cache
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\obj\Release\netcoreapp3.1\CALENDAR.Migrations.csproj.CopyComplete
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\obj\Release\netcoreapp3.1\CALENDAR.Migrations.dll
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\obj\Release\netcoreapp3.1\CALENDAR.Migrations.pdb
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Migrations\obj\Release\netcoreapp3.1\CALENDAR.Migrations.genruntimeconfig.cache

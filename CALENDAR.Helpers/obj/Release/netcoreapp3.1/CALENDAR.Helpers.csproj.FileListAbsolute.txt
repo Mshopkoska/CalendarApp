@@ -1,0 +1,16 @@
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\bin\Release\netcoreapp3.1\CALENDAR.Helpers.deps.json
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\bin\Release\netcoreapp3.1\CALENDAR.Helpers.runtimeconfig.json
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\bin\Release\netcoreapp3.1\CALENDAR.Helpers.runtimeconfig.dev.json
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\bin\Release\netcoreapp3.1\CALENDAR.Helpers.dll
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\bin\Release\netcoreapp3.1\CALENDAR.Helpers.pdb
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\bin\Release\netcoreapp3.1\CALENDAR.Entity.dll
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\bin\Release\netcoreapp3.1\CALENDAR.Entity.pdb
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\obj\Release\netcoreapp3.1\CALENDAR.Helpers.csproj.AssemblyReference.cache
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\obj\Release\netcoreapp3.1\CALENDAR.Helpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\obj\Release\netcoreapp3.1\CALENDAR.Helpers.AssemblyInfoInputs.cache
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\obj\Release\netcoreapp3.1\CALENDAR.Helpers.AssemblyInfo.cs
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\obj\Release\netcoreapp3.1\CALENDAR.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\obj\Release\netcoreapp3.1\CALENDAR.Helpers.csproj.CopyComplete
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\obj\Release\netcoreapp3.1\CALENDAR.Helpers.dll
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\obj\Release\netcoreapp3.1\CALENDAR.Helpers.pdb
+C:\Users\Mimoza\source\repos\CALENDAR\CALENDAR.Helpers\obj\Release\netcoreapp3.1\CALENDAR.Helpers.genruntimeconfig.cache

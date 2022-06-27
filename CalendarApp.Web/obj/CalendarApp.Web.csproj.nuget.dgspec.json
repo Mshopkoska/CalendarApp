@@ -479,6 +479,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "FluentScheduler": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            },
             "MailKit": {
               "target": "Package",
               "version": "[3.3.0, )"

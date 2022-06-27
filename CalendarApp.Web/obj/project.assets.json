@@ -23,6 +23,15 @@
           "lib/netstandard1.5/Castle.Core.dll": {}
         }
       },
+      "FluentScheduler/5.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/FluentScheduler.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentScheduler.dll": {}
+        }
+      },
       "MailKit/3.3.0": {
         "type": "package",
         "dependencies": {
@@ -3055,6 +3064,22 @@
         "lib/netstandard1.5/Castle.Core.dll",
         "lib/netstandard1.5/Castle.Core.xml",
         "readme.txt"
+      ]
+    },
+    "FluentScheduler/5.5.1": {
+      "sha512": "OwehD7vZ1CFAboLPrfBTibz/FeKg8DK1h242u0Y050dbfcOlb+d4S/iGBNt/yHaHIhCsmPiQqQjG13e441xWLA==",
+      "type": "package",
+      "path": "fluentscheduler/5.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentscheduler.5.5.1.nupkg.sha512",
+        "fluentscheduler.nuspec",
+        "lib/netstandard2.0/FluentScheduler.dll",
+        "lib/netstandard2.0/FluentScheduler.xml",
+        "lib/netstandard2.1/FluentScheduler.dll",
+        "lib/netstandard2.1/FluentScheduler.xml",
+        "logo-200x200.png"
       ]
     },
     "MailKit/3.3.0": {
@@ -9621,6 +9646,7 @@
     ".NETCoreApp,Version=v3.1": [
       "CALENDAR.BusinessLogic >= 1.0.0",
       "CALENDAR.Helpers >= 1.0.0",
+      "FluentScheduler >= 5.5.1",
       "MailKit >= 3.3.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.25",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.25",
@@ -9684,6 +9710,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "FluentScheduler": {
+            "target": "Package",
+            "version": "[5.5.1, )"
+          },
           "MailKit": {
             "target": "Package",
             "version": "[3.3.0, )"

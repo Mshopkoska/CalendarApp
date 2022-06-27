@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "veI8Gv6CAOjf/Zi0BCmCBruXY3JglGegVFyvRMJISpXacXZK9RgRNa2ghua9DInIpZhkhhFC/0VJp4OnaLxAnQ==",
+  "dgSpecHash": "Gw2WYoNdIti6Tkr0W6m24I9lgJ8o84poTLGjEmNl9OirI4xPM1uMU0NU33es5TL5LDwSSzvBVX9WoLRjINcAng==",
   "success": true,
   "projectFilePath": "C:\\Users\\Mimoza\\source\\repos\\CALENDAR\\CalendarApp.Web\\CalendarApp.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mimoza\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
+    "C:\\Users\\Mimoza\\.nuget\\packages\\fluentscheduler\\5.5.1\\fluentscheduler.5.5.1.nupkg.sha512",
     "C:\\Users\\Mimoza\\.nuget\\packages\\mailkit\\3.3.0\\mailkit.3.3.0.nupkg.sha512",
     "C:\\Users\\Mimoza\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.25\\microsoft.aspnetcore.cryptography.internal.3.1.25.nupkg.sha512",
     "C:\\Users\\Mimoza\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.25\\microsoft.aspnetcore.cryptography.keyderivation.3.1.25.nupkg.sha512",

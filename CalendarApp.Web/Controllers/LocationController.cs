@@ -82,9 +82,7 @@ namespace CalendarApp.Web.Controllers
                 {
                     string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                     location.UserId = userId;
-
-
-                    locationManagement.New(location);
+                     locationManagement.New(location);
                     TempData["Alert"] = "Success! You created a location for: " + location.Name;
                     return RedirectToAction(nameof(Index));
                 }
@@ -97,5 +95,6 @@ namespace CalendarApp.Web.Controllers
             }
             return View(location);
         }*/
+
     }
 }
