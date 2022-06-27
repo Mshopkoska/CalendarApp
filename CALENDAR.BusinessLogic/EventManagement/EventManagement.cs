@@ -3,9 +3,9 @@ using CALENDAR.Entity;
 using CALENDAR.Data;
 using System.Collections.Generic;
 
-namespace CALENDAR.BusinessLogic
+namespace CALENDAR.BusinessLogic.EventManagement
 {
-    public class EventManagement
+    public class EventManagement : IEventManagement
     {
         private readonly IDAL _dal;
 
@@ -14,8 +14,8 @@ namespace CALENDAR.BusinessLogic
             _dal = dal;
         }
 
-        public void New(string Name, string Description, DateTime startTime, DateTime endTime, 
-            Location location, ReminderFrequency reminderFrequency,int NTimesFrequency,string UserId, List<string> emails)
+        public void New(string Name, string Description, DateTime startTime, DateTime endTime,
+            Location location, ReminderFrequency reminderFrequency, int NTimesFrequency, string UserId, List<string> emails)
         {
             Event e = new Event(Name, Description, startTime, endTime, location, reminderFrequency, NTimesFrequency, UserId, emails);
             e.eventReminderDate = CalculateEventReminderDate(reminderFrequency, NTimesFrequency);
@@ -39,7 +39,7 @@ namespace CALENDAR.BusinessLogic
 
         public Event GetEvent(int id)
         {
-            return _dal.GetEvent(id);   
+            return _dal.GetEvent(id);
         }
 
         public List<Event> GetEvents()

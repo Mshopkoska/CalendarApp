@@ -5,8 +5,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using CALENDAR.Entity;
-using CALENDAR.BusinessLogic;
-
+using CALENDAR.BusinessLogic.EventManagement;
 
 namespace CalendarApp.Web.Services.ReminderEmailService
 {

@@ -5,19 +5,18 @@ using CALENDAR.Entity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
-using CALENDAR.BusinessLogic;
 using Microsoft.AspNetCore.Http;
-
+using CALENDAR.BusinessLogic.LocationManagement;
 
 namespace CalendarApp.Web.Controllers
 {
     [Authorize]
     public class LocationsController : Controller
     {
-        private readonly LocationManagement locationManagement;
+        private readonly ILocationManagement locationManagement;
         private readonly UserManager<ApplicationUser> _usermanager;
 
-        public LocationsController(LocationManagement locationManagement, UserManager<ApplicationUser> _usermanager)
+        public LocationsController(ILocationManagement locationManagement, UserManager<ApplicationUser> _usermanager)
         {
             this.locationManagement = locationManagement;
             this._usermanager = _usermanager;

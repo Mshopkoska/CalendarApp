@@ -3,9 +3,9 @@ using CALENDAR.Entity;
 using CALENDAR.Data;
 using System.Collections.Generic;
 
-namespace CALENDAR.BusinessLogic
+namespace CALENDAR.BusinessLogic.LocationManagement
 {
-    public class LocationManagement
+    public class LocationManagement : ILocationManagement
     {
         private readonly IDAL _dal;
 
@@ -21,7 +21,7 @@ namespace CALENDAR.BusinessLogic
 
         public Location GetLocationById(int id)
         {
-           return _dal.GetLocation(id);
+            return _dal.GetLocation(id);
         }
 
         public Location GetLocationByName(string name)
@@ -31,7 +31,7 @@ namespace CALENDAR.BusinessLogic
 
         public List<Location> GetLocations()
         {
-           return _dal.GetLocations();
+            return _dal.GetLocations();
         }
 
         public List<Location> GetUserLocations(string userid)

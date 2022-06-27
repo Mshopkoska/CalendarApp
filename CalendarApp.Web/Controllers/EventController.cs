@@ -13,24 +13,23 @@ using CalendarApp.Web.Controllers.ActionFilters;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using CalendarApp.Web.Models;
 using CALENDAR.Migrations;
-using CALENDAR.BusinessLogic;
+using CALENDAR.BusinessLogic.EventManagement;
+using CALENDAR.BusinessLogic.LocationManagement;
 
 namespace CalendarApp.Web.Controllers
 {
     [Authorize]
     public class EventController : Controller
     {
-        //private readonly IDAL _dal;
-        private readonly EventManagement eventManagment;
-        private readonly LocationManagement locationManagement;
+        private readonly IEventManagement eventManagment;
+        private readonly ILocationManagement locationManagement;
         private readonly UserManager<ApplicationUser> _usermanager;
         private readonly ApplicationDbContext _db;
-        public IEmailSender _sender;
+        private readonly IEmailSender _sender;
         private readonly ILogger<EventController> _logger;
 
-        public EventController(EventManagement eventManagment, LocationManagement locationManagement, UserManager<ApplicationUser> _usermanager, ApplicationDbContext _db, IEmailSender _sender, ILogger<EventController> _logger)
+        public EventController(IEventManagement eventManagment, ILocationManagement locationManagement, UserManager<ApplicationUser> _usermanager, ApplicationDbContext _db, IEmailSender _sender, ILogger<EventController> _logger)
         {
-            //this._dal = _dal;
             this.eventManagment = eventManagment;
             this.locationManagement = locationManagement;
             this._usermanager = _usermanager;
@@ -83,35 +82,7 @@ namespace CalendarApp.Web.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
 
-        /*public async Task<IActionResult> Create(EventViewModel vm, IFormCollection form)
-        {
-            var name = form["Event.Name"].ToString();
-            var description = form["Event.Description"].ToString();
-            var startTime = DateTime.Parse(form["Event.StartTime"].ToString());
-            var endTime = DateTime.Parse(form["Event.EndTime"].ToString());
-            var userid = form["UserId"].ToString();
-
-            var locname = form["Location"].ToString();
-            var location = _dal.GetLocation(locname);
-
-            ReminderFrequency rf = (ReminderFrequency)int.Parse(form["Event.reminderFrequency"]);
-            var NTimesFrequency = int.Parse(form["Event.NTimesFrequency"].ToString());
-            var emails = form["Event.Emails"].ToString(); //comma separated 
-            List<String> emailList = emails.Split(",").ToList();
-
-            var newevent = new Event(name, description, startTime, endTime, location, rf, NTimesFrequency, userid, emailList);
-
-            _dal.CreateEvent(newevent);
-            TempData["Alert"] = "Success! You created a new event for: " + form["Event.Name"];
-
-
-            newevent.eventReminderDate = CalculateEventReminderDate(newevent);
-
-            
-            
-
-            return RedirectToAction("Index");
-        }*/
+      
 
         public async Task<IActionResult> Create(EventViewModel vm, IFormCollection form)
         {

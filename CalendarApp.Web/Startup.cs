@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -8,6 +7,8 @@ using CALENDAR.Entity;
 using CALENDAR.Data;
 using Microsoft.EntityFrameworkCore;
 using CALENDAR.Migrations;
+using CALENDAR.BusinessLogic.EventManagement;
+using CALENDAR.BusinessLogic.LocationManagement;
 
 namespace CalendarApp.Web
 {
@@ -33,6 +34,8 @@ namespace CalendarApp.Web
             services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddScoped<IDAL, DAL>();
+            services.AddScoped<IEventManagement, EventManagement>();
+            services.AddScoped<ILocationManagement, LocationManagement>();
 
             //services.AddTransient<IEmailSender, EmailSender>();
             //services.Configure<AuthMessageSenderOptions>(Configuration);

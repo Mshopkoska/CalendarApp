@@ -8,18 +8,19 @@ using System.Security.Claims;
 using CALENDAR.Data;
 using CALENDAR.Entity;
 using CALENDAR.Helpers;
-using CALENDAR.BusinessLogic;
+using CALENDAR.BusinessLogic.EventManagement;
+using CALENDAR.BusinessLogic.LocationManagement;
 
 namespace CalendarApp.Web.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly EventManagement eventManagment;
-        private readonly LocationManagement locationManagement;
+        private readonly IEventManagement eventManagment;
+        private readonly ILocationManagement locationManagement;
         private readonly UserManager<ApplicationUser> _usermanager;
 
-        public HomeController(EventManagement eventManagment, LocationManagement locationManagement, ILogger<HomeController> _logger, IDAL _idal, UserManager<ApplicationUser> _usermanager)
+        public HomeController(IEventManagement eventManagment, ILocationManagement locationManagement, ILogger<HomeController> _logger, IDAL _idal, UserManager<ApplicationUser> _usermanager)
         {
             this._logger = _logger;
             this.eventManagment = eventManagment;
