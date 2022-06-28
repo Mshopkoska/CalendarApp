@@ -36,8 +36,8 @@ namespace EmailReminderService
         public async void Execute()
         {
             DateTime current = DateTime.Now;
-            List<Event> emailNotifications = eventManagment.GetEventsFromDate(current, "notification"); //list of all events that occur today and email notification needs to be sent
-            List<Event> emailReminders = eventManagment.GetEventsFromDate(current, "reminder"); //list of all events that need email reminder to be sent
+            List<Event> emailNotifications = eventManagment.GetEventsFromDate(current, EmailType.Notification); //list of all events that occur today and email notification needs to be sent
+            List<Event> emailReminders = eventManagment.GetEventsFromDate(current, EmailType.Reminder); //list of all events that need email reminder to be sent
 
             //send email notification to user when the event occurs
             if (emailNotifications.Count != 0) 
@@ -140,5 +140,5 @@ namespace EmailReminderService
 
             return reminderDate;
         }
-    }
+    }    
 }

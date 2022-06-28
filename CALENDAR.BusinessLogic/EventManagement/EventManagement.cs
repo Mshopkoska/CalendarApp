@@ -56,7 +56,7 @@ namespace CALENDAR.BusinessLogic.EventManagement
             return _dal.GetMyEvents(userid);
         }
 
-        public List<Event> GetEventsFromDate(DateTime date, string type)
+        public List<Event> GetEventsFromDate(DateTime date, EmailType type)
         {
             return _dal.GetEventsFromDate(date, type);
         }

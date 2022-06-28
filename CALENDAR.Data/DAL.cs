@@ -10,7 +10,7 @@ namespace CALENDAR.Data
     {
         public List<Event> GetEvents();
         public List<Event> GetMyEvents(string userid);
-        public List<Event> GetEventsFromDate(DateTime date, string type);
+        public List<Event> GetEventsFromDate(DateTime date, EmailType type);
         public Event GetEvent(int id);
         public void CreateEvent(Event newevent);
         public void UpdateEvent(Event newevent);
@@ -89,13 +89,14 @@ namespace CALENDAR.Data
             return db.Locations.Where(x => x.Name == Name).FirstOrDefault();
         }
 
-        public List<Event> GetEventsFromDate(DateTime date, string type)
+        public List<Event> GetEventsFromDate(DateTime date, EmailType type)
         {
-            if (type == "reminder")
+            if (!type.Equals(EmailType.Reminder))
+                return db.Events.Where(x => x.StartTime == date).ToList();
+            else
             {
                 return db.Events.Where(x => x.eventReminderDate == date).ToList();
             }
-            else return db.Events.Where(x => x.StartTime == date).ToList();
         }
 
     }

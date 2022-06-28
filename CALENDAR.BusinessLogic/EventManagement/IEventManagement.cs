@@ -23,6 +23,6 @@ namespace CALENDAR.BusinessLogic.EventManagement
 
         public List<Event> GetUserEvents(string userid);
 
-        public List<Event> GetEventsFromDate(DateTime date, string type);
+        public List<Event> GetEventsFromDate(DateTime date, EmailType type);
     }
 }
