@@ -17,8 +17,10 @@ namespace CALENDAR.BusinessLogic.EventManagement
         public void New(string Name, string Description, DateTime startTime, DateTime endTime,
             Location location, ReminderFrequency reminderFrequency, int NTimesFrequency, string UserId, List<string> emails)
         {
-            Event e = new Event(Name, Description, startTime, endTime, location, reminderFrequency, NTimesFrequency, UserId, emails);
-            e.eventReminderDate = CalculateEventReminderDate(reminderFrequency, NTimesFrequency);
+            Event e = new Event(Name, Description, startTime, endTime, location, reminderFrequency, NTimesFrequency, UserId, emails)
+            {
+                eventReminderDate = CalculateEventReminderDate(reminderFrequency, NTimesFrequency)
+            };
 
             _dal.CreateEvent(e);
         }
@@ -26,8 +28,10 @@ namespace CALENDAR.BusinessLogic.EventManagement
         public void Update(string Name, string Description, DateTime startTime, DateTime endTime,
             Location location, ReminderFrequency reminderFrequency, int NTimesFrequency, string UserId, List<string> emails)
         {
-            Event e = new Event(Name, Description, startTime, endTime, location, reminderFrequency, NTimesFrequency, UserId, emails);
-            e.eventReminderDate = CalculateEventReminderDate(reminderFrequency, NTimesFrequency);
+            Event e = new Event(Name, Description, startTime, endTime, location, reminderFrequency, NTimesFrequency, UserId, emails)
+            {
+                eventReminderDate = CalculateEventReminderDate(reminderFrequency, NTimesFrequency)
+            };
 
             _dal.UpdateEvent(e);
         }
@@ -57,13 +61,33 @@ namespace CALENDAR.BusinessLogic.EventManagement
             return _dal.GetEventsFromDate(date, type);
         }
 
-        public static DateTime CalculateEventReminderDate(ReminderFrequency reminderFrequency, int NTimesFrequency)
+        /// <summary>
+        /// This method calculates the next reminder date based on the event reminder frequency
+        /// </summary>
+        /// <param name="reminderFrequency"></param>
+        /// <param name="NTimesFrequency"></param>
+        /// <returns></returns>
+        public static DateTime CalculateEventReminderDate(ReminderFrequency reminderFrequency, int nTimesFrequency)
         {
             DateTime reminderDate = DateTime.Now;
-            if (reminderFrequency.Equals(ReminderFrequency.Daily)) return reminderDate.AddDays(NTimesFrequency * 1);
-            else if (reminderFrequency.Equals(ReminderFrequency.Weekly)) return reminderDate.AddDays(NTimesFrequency * 7);
-            else if (reminderFrequency.Equals(ReminderFrequency.Monthly)) return reminderDate.AddMonths(NTimesFrequency * 1);
-            else return reminderDate.AddYears(NTimesFrequency * 1);
+
+            switch (reminderFrequency)
+            {
+                case ReminderFrequency.Daily:
+                    reminderDate = reminderDate.AddDays(nTimesFrequency);
+                    break;
+                case ReminderFrequency.Weekly:
+                    reminderDate = reminderDate.AddDays(nTimesFrequency * 7);
+                    break;
+                case ReminderFrequency.Monthly:
+                    reminderDate = reminderDate.AddMonths(nTimesFrequency);
+                    break;
+                case ReminderFrequency.Yearly:
+                    reminderDate = reminderDate.AddYears(nTimesFrequency);
+                    break;
+            }
+
+            return reminderDate;
         }
     }
 }

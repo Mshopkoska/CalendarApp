@@ -20,7 +20,7 @@ namespace CalendarApp.Web.Controllers
         private readonly ILocationManagement locationManagement;
         private readonly UserManager<ApplicationUser> _usermanager;
 
-        public HomeController(IEventManagement eventManagment, ILocationManagement locationManagement, ILogger<HomeController> _logger, IDAL _idal, UserManager<ApplicationUser> _usermanager)
+        public HomeController(IEventManagement eventManagment, ILocationManagement locationManagement, ILogger<HomeController> _logger, UserManager<ApplicationUser> _usermanager)
         {
             this._logger = _logger;
             this.eventManagment = eventManagment;

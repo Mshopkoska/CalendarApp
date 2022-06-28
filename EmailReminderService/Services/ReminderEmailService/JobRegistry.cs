@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using CALENDAR.Entity;
 using CALENDAR.BusinessLogic;
 
-namespace CalendarApp.Web.Services.ReminderEmailService
+namespace EmailReminderService
 {
     public class JobRegistry : Registry
     {

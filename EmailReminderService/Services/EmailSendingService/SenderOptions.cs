@@ -1,5 +1,4 @@
-﻿namespace CalendarApp.Web.Services.EmailSendingService
-{
+﻿namespace EmailReminderService { 
     public class SenderOptions
     {
         public string SendGridKey { get; set; }

@@ -9,7 +9,7 @@ using CALENDAR.BusinessLogic;
 
 
 
-namespace CalendarApp.Web.Services.ReminderEmailService
+namespace EmailReminderService
 {
     public class ProbenTask : IJob
     {

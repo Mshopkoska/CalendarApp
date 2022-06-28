@@ -5,7 +5,7 @@ using System;
 using Microsoft.Extensions.Logging;
 using MailKit.Net.Smtp;
 
-namespace CalendarApp.Web.Services.EmailSendingService
+namespace EmailReminderService
 {
     public class EmailSender : IEmailSender
     {
